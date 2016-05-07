@@ -133,11 +133,13 @@
 			color: black;
 			border-radius: 3%;
 			padding: 4%;
+					
 			}
 			#position 
 			{
 				width: 20%;
 				float: right;
+
 			}
 			.position:hover
 			{
@@ -147,7 +149,7 @@
 				width: 80%;
 				text-align: left;
 				float: left;
-				overflow: inherit;
+				overflow: hidden;
 			}
 
 			

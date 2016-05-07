@@ -17,8 +17,8 @@
 			<a class="brand" href="">Nibble Computer Society</a>
 
 			<ul class="left">
-					<li><a id="check"  onclick="check()" href="dashboard.html">Home</a></li>
-					<li><a id="check"  onclick="check()" href="about.html">About</a></li>
+					<li><a id="check" href="dashboard.html">Home</a></li>
+					<li><a id="check" href="about.html">About</a></li>
 			</ul>
 		</div>
 			
@@ -37,7 +37,7 @@
 				</div>
 
 				<div class="brief">
-					<h1 id="0"><a class="icon" href="#brief" onclick="edit(0)" id="display0" >&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h1>
+					<h1 id="0"><a class="icon" href="#brief" onclick="edit(0)" id="display0" ><i  class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h1>
 
 					<div class="edit" id="edit0">
 						<input type="text" id="edit00" value="" placeholder="Enter Your name">
@@ -83,7 +83,11 @@
 					
 				<h1>Experience</h1>
 				<hr>
-				<div class="summary">
+				<div id="position">
+					<br>
+					<a class="list-group-item position" href="#Experience" onclick="add(1)" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Position</a></p>
+				</div>
+				<div class="summary" id="summary1">
 					<h2><a class="icon" href="" >Web Developer&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h2>
 					<h3><a class="icon" href="" >Nibble Computer Society&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
 					<h3><a class="icon" href="" >Feb 16 - Present&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
@@ -92,17 +96,18 @@
 					&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
 				</div>
-				<div id="position">
-					<br>
-					<a class="list-group-item position" href="" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Position</a></p>
-				</div> 	
+				 	
 			</div>
 
 			<div class="boxx">
 					
 				<h1>Education</h1>
 				<hr>
-				<div class="summary">
+				<div id="position">
+					<br>
+					<a class="list-group-item position" href="#Education" onclick="add(2)" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Education</a></p>
+				</div> 
+				<div class="summary" id="summary2">
 					<h2><a class="icon" href="" >JSS Academy of Technical Education&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h2>
 					<h3><a class="icon" href="" >Enginnering Degree, Computer Science & Engineering&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
 					<h3><a class="icon" href="" >2015-2016&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
@@ -111,17 +116,18 @@
 					&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
 				</div>
-				<div id="position">
-					<br>
-					<a class="list-group-item position" href="" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Education</a></p>
-				</div> 	
+					
 			</div>
 
 			<div class="boxx">
 					
 				<h1>Projects</h1>
 				<hr>
-				<div class="summary">
+				<div id="position">
+					<br>
+					<a class="list-group-item position" href="#Projects" onclick="add(3)" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Projects</a></p>
+				</div>
+				<div class="summary" id="summary3">
 					<h2><a class="icon" href="" >Nibble Connect&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h2>
 					<h3><a class="icon" href="" >Project URL&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
 					<h3><a class="icon" href="" >2015-2016&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
@@ -131,17 +137,18 @@
 					</p>
 					<p><a class="icon" href="" >Team Members Name&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
 				</div>
-				<div id="position">
-					<br>
-					<a class="list-group-item position" href="" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Projects</a></p>
-				</div> 	
+				 	
 			</div>
 
 			<div class="boxx">
 				
 				<h1>Achievements & Certificate</h1>
 				<hr>
-				<div class="summary">
+				<div id="position" >
+					<br>
+					<a class="list-group-item position" href="#Achievements" onclick="add(4)" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Certificate</a></p>
+				</div>
+				<div class="summary" id="summary4">
 	
 					<h3><a class="icon" href="" >Resume Writing Certificate&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</h3>
@@ -150,10 +157,7 @@
 					<h3><a class="icon" href="" >Javasript Certification&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</h3>
 				</div>
-				<div id="position" >
-					<br>
-					<a class="list-group-item position" href="" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Certificate</a></p>
-				</div> 	
+				 	
 			</div>
 
 
@@ -161,7 +165,11 @@
 				
 				<h1>Skills & Endorsements</h1>
 				<hr>
-				<div class="summary skills">
+				<div id="skill_add">
+					<br>
+					<a class="list-group-item position" href="#Skills" onclick="add(5)" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Skills</a></p>
+				</div>
+				<div class="summary skills" id="summary5">
 	
 					<p><a class="icon" href="" >HTML&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
@@ -170,10 +178,7 @@
 					<p><a class="icon" href="" >Javasript&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
 				</div>
-				<div id="skill_add" >
-					<br>
-					<a class="list-group-item position" href="" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Skills</a></p>
-				</div> 	
+				 	
 			</div>
 
 			
@@ -199,6 +204,7 @@
 				</div>
 
 			</div>
+			<p style="clear:both"></p>
 			<hr>
 			<hr>
 			<br>
