@@ -20,6 +20,7 @@
 					<li><a id="check" href="dashboard.html">Home</a></li>
 					<li><a id="check" href="about.html">About</a></li>
 			</ul>
+
 		</div>
 			
 			
@@ -32,23 +33,43 @@
 
 			<div class="boxx" >
 
-				<div class="pic">
+				<div class="pic" onclick="pic()">
 					<img src="ankit.png">
 				</div>
 
 				<div class="brief">
-					<h1 id="0"><a class="icon" href="#brief" onclick="edit(0)" id="display0" ><i  class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h1>
+					<h1 id="0"><a class="icon" href="#brief" onclick="edit(0)" id="display0" >Name<i  class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h1>
 
 					<div class="edit" id="edit0">
-						<input type="text" id="edit00" value="" placeholder="Enter Your name">
+						<input type="text" id="edit_0" value="" placeholder="Enter Your name">
 						<input class="button" type="button" value="Submit" onclick="submitt(0)"> 
-
 						<input class="button" type="button" value="Cancel" onclick="cancel(0)">
 					</div>
 
-					<p>Current : <a class="icon" href="" >Nibble Computer Society&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
-					<p>Previous : <a class="icon" href="" >HackerEarth&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
-					<p>Education : <a class="icon" href="" >JSS Academy Of Technical Education&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
+					<p id="1">Current : <a class="icon" href="#brief" onclick="edit(1)" id="display1" >working<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
+
+					<div class="edit" id="edit1">
+						<input type="text" id="edit_1" value="" placeholder="Enter Your name">
+						<input class="button" type="button" value="Submit" onclick="submitt(1)"> 
+						<input class="button" type="button" value="Cancel" onclick="cancel(1)">
+					</div>
+
+					<p id="2">Previous : <a class="icon" href="#brief" onclick="edit(2)" id="display2" >Working<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
+
+					<div class="edit" id="edit2">
+						<input type="text" id="edit_2" value="" placeholder="Enter Your name">
+						<input class="button" type="button" value="Submit" onclick="submitt(2)"> 
+						<input class="button" type="button" value="Cancel" onclick="cancel(2)">
+					</div>
+
+					<p id="3">Education : <a class="icon" href="#brief" onclick="edit(3)" id="display3">College<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
+
+					<div class="edit" id="edit3">
+						<input type="text" id="edit_3" value="" placeholder="Enter Your name">
+						<input class="button" type="button" value="Submit" onclick="submitt(3)"> 
+						<input class="button" type="button" value="Cancel" onclick="cancel(3)">
+					</div>
+
 				</div>		
 			</div>
 
@@ -56,23 +77,23 @@
 
 				<h1>Summary</h1>
 					<hr>
-				<div class="summary" id="1">
+				<div class="summary" id="4">
 					
-					<p id="display1">
+					<p id="display4">
 					</p>
 				</div>
 
 				<div id="icon">
-					<a class="icon" href="#summary" onclick="edit(1)"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
+					<a class="icon" href="#summary" onclick="edit(4)"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
 				</div>
 
-				<div class="edit" id="edit1">
+				<div class="edit" id="edit4">
 				
-					<textarea name="comment"  id="edit11" value="" placeholder="Enter text here..."></textarea><br>
+					<textarea name="comment"  id="edit_4" value="" placeholder="Enter text here..."></textarea><br>
 
-					<input class="button" type="button" value="Submit" onclick="submitt(1)"> 
+					<input class="button" type="button" value="Submit" onclick="submitt(4)"> 
 
-					<input class="button" type="button" value="Cancel" onclick="cancel(1)">
+					<input class="button" type="button" value="Cancel" onclick="cancel(4)">
 				</div>
 
 			</div>
@@ -87,14 +108,22 @@
 					<br>
 					<a class="list-group-item position" href="#Experience" onclick="add(1)" ><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Position</a></p>
 				</div>
-				<div class="summary" id="summary1">
-					<h2><a class="icon" href="" >Web Developer&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h2>
-					<h3><a class="icon" href="" >Nibble Computer Society&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
-					<h3><a class="icon" href="" >Feb 16 - Present&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
 
-					<p><a class="icon" href="" >Description
+				<div class="summary">
+					<h2><a class="icon" href="#Experience" onclick="experience()">Web Developer&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h2>
+					<p><a class="icon" href="#Experience" onclick="experience()">Description
 					&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
+				</div>
+
+				<div class="edit">
+				
+					<input type="text"  id="title" value="" placeholder="Enter your designation"><br><br>
+					<textarea type="text"  id="des" value="" placeholder="Brief Description of your work"></textarea><br>
+					<input class="button" type="button" value="Submit" onclick="submitt(4)"> 
+					<input class="button" type="button" value="Cancel" onclick="cancel(4)">
+					<input class="button" type="button" value="Remove">
+
 				</div>
 				 	
 			</div>
@@ -116,6 +145,18 @@
 					&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
 				</div>
+
+				<div class="edit">
+				
+					<input type="text"  id="college" value="" placeholder="College Name"><br><br>
+					<input type="text"  id="branch" value="" placeholder="Branch/Degree"><br><br>
+					<input type="text"  id="time" value="" placeholder="Enter the time period"><br><br>
+					<textarea type="text"  id="des" value="" placeholder="Brief Description"></textarea><br>
+					<input class="button" type="button" value="Submit" onclick="submitt(4)"> 
+					<input class="button" type="button" value="Cancel" onclick="cancel(4)">
+					<input class="button" type="button" value="Remove">
+
+				</div>
 					
 			</div>
 
@@ -130,15 +171,25 @@
 				<div class="summary" id="summary3">
 					<h2><a class="icon" href="" >Nibble Connect&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h2>
 					<h3><a class="icon" href="" >Project URL&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
-					<h3><a class="icon" href="" >2015-2016&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
-
 					<p><a class="icon" href="" >Description
 					&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
-					<p><a class="icon" href="" >Team Members Name&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
+				</div>
+
+				<div class="edit">
+				
+					<input type="text"  id="p_name" value="" placeholder="Project Name"><br><br>
+					<input type="text"  id="p_url" value="" placeholder="Project URL"><br><br>
+					<textarea type="text"  id="des" value="" placeholder="Brief Description"></textarea><br>
+					<input class="button" type="button" value="Submit" onclick="submitt(4)"> 
+					<input class="button" type="button" value="Cancel" onclick="cancel(4)">
+					<input class="button" type="button" value="Remove">
+
 				</div>
 				 	
 			</div>
+
+			
 
 			<div class="boxx">
 				
@@ -150,20 +201,56 @@
 				</div>
 				<div class="summary" id="summary4">
 	
-					<h3><a class="icon" href="" >Resume Writing Certificate&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
-					</h3>
-					<h3><a class="icon" href="" >Winner in Hackathon&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
-					</h3>
-					<h3><a class="icon" href="" >Javasript Certification&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
-					</h3>
+					<h3><a class="icon" href="" >Resume Writing Certificate&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></h3>
+					<p><a class="icon" href="" >Description
+					&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
+					</p>
+
+				</div>
+
+				<div class="edit">
+				
+					<input type="text"  id="c_name" value="" placeholder="Certificate Name"><br><br>
+					<textarea type="text"  id="des" value="" placeholder="Brief Description"></textarea><br>
+					<input class="button" type="button" value="Submit" onclick="submitt(4)"> 
+					<input class="button" type="button" value="Cancel" onclick="cancel(4)">
+					<input class="button" type="button" value="Remove">
+
 				</div>
 				 	
+			</div>
+
+			<div class="boxx">
+
+				<h1>Recommendations</h1>
+					<hr>
+				<div class="summary" id="4">
+					
+					<p id="display4">
+					</p>
+				</div>
+
+				<div id="icon">
+					<a class="icon" href="#summary" onclick="edit(4)"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a></p>
+				</div>
+
+				<div class="edit" id="edit4">
+				
+					<textarea name="comment"  id="edit_4" value="" placeholder="Enter text here..."></textarea><br>
+
+					<input class="button" type="button" value="Submit" onclick="submitt(4)"> 
+
+					<input class="button" type="button" value="Cancel" onclick="cancel(4)">
+
+					<input class="button" type="button" value="Remove">
+				</div>
+
 			</div>
 
 
 			<div class="boxx" id="boxx">
 				
-				<h1>Skills & Endorsements</h1>
+				<h1>Skills</h1>
 				<hr>
 				<div id="skill_add">
 					<br>
@@ -173,10 +260,15 @@
 	
 					<p><a class="icon" href="" >HTML&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
-					<p><a class="icon" href="" >CSS&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
-					</p>
-					<p><a class="icon" href="" >Javasript&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
-					</p>
+				</div>
+
+				<div class="edit">
+				
+					<input type="text"  id="s_name" value="" placeholder="Enter your Skills"><br>
+					<input class="btn" type="button" value="Submit" onclick="submitt(4)"> 
+					<input class="btn" type="button" value="Cancel" onclick="cancel(4)">
+					<input class="btn" type="button" value="Remove">
+
 				</div>
 				 	
 			</div>
@@ -195,23 +287,29 @@
 					</p>
 					<p><a class="icon" href="" >Marital Status&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>
-				</div>
 
-				<div class="summary">
-	
 					<p><a class="icon" href="" >Contact Details&nbsp;<i class="fa fa-pencil fa-fw" aria-hidden="true"></i></a>
 					</p>	
 				</div>
 
+			
+				<div class="edit">
+					
+					<input type="text"  id="b_name" value="" placeholder="Enter your Birth date"><br><br>
+					<input type="text"  id="m_name" value="" placeholder="Enter your Marital status"><br><br>
+					<textarea type="text"  id="contact" value="" placeholder="Contact Details"></textarea><br>
+					<input class="btn" type="button" value="Submit" onclick="submitt(4)"> 
+					<input class="btn" type="button" value="Cancel" onclick="cancel(4)">
+				</div>
+
 			</div>
+
 			<p style="clear:both"></p>
-			<hr>
-			<hr>
-			<br>
-			<br>
-
-
 		</div>
+		<!-- <div class="footer">
+			<a href="www.hackncs.com">&copy; Nibble Computer Society</a>
+		</div> -->
+		
 	
 	</body>
 
